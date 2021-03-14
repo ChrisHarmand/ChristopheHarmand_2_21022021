@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-<head>
-	<title>Reservia</title>
-    <meta charset="utf-8">
-   	<meta name="description" content="Reservia, la nouvelle plateforme qui vous permet de trouver un hébergement pour vos vacances de rêve...">
-	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" href="logos/reservia_favicon.png">
-</head>
+	<head>
+		<title>Reservia</title>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Reservia, la nouvelle plateforme qui vous permet de trouver un hébergement pour vos vacances de rêve...">
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="logos/reservia_favicon.png">
+	</head>
 
 <body>
-
+	<div id="bloc_page">
 <!-- Header -->
-<header>
-  <img class="logo" src="logos/reservia_logo.png" alt="logo de reservia">
-	<p id="cta_menu"> S'inscrire</p>
-	<nav class="menu">
-		<p>Hébergements</p>
-		<p>Activités</p>
-	</nav>
-</header>
+		<header>
+			<div id="head_menu">
+				<div id="logo">
+					<img class="logo" src="logos/reservia_logo.png" alt="logo de reservia">
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#hebergements_marseille">Hébergements</a></li>
+						<li><a href="#activites_marseille">Activités</a></li>
+					</ul>
+					<a id="cta" href="#">S'inscrire</a>
+				</nav>
+
+			</div>
+		</header>
 
 <!-- Section Titre principal -->
 <section id="page_title">
@@ -29,7 +36,7 @@
 <!-- Section Barre de recherche -->
 <section id="search">
 	<div class="locate_icon">
-		<img src="icons/locate.svg" alt="localisation" width="25" height="25">
+		<img src="icons/locate.svg" alt="localisation">
 	</div>
 	<div class="search_bar">
 		<form action="search.php" method="post">
@@ -39,10 +46,10 @@
 		</form>
 	</div>
 	<div class="cta_search_icon">
-			<img id="icon_search" src="icons/search.svg" alt="recherche hebergement" width="20" height="25">
+			<img id="icon_search" src="icons/search.svg" alt="recherche hebergement">
 		</div>
 	<div class="cta_search_text">
-			<h2>Rechercher</h2>
+			<p>Rechercher</p>
 	</div>
 </section>
 
@@ -129,7 +136,7 @@
 </div>
 </aside>
    <!-- Section Hébergements à Marseille  -->
-<section class="hebergements_marseillle">
+<section id="hebergements_marseille">
 	<div class="titre_marseille">
 		<h2>Hébergements à Marseille</h2>
 	</div>
@@ -229,7 +236,7 @@
 </section>
 
 <!-- Section Actvitiés -->
-<section class="activites_marseillle">
+<section id="activites_marseille">
 	<div class="titre_activites">
 		<h2>Activités à Marseille</h2>
 	</div>
@@ -237,27 +244,60 @@
 	<div class="vignettes_activites">
 		<!-- Vignette "Vieux port"   -->
 		<div class="vignette3">
-			<img class="image_marseille" src="images/activites/vieux_port_L.jpg" alt="vieux port à Marseille" width="100">
+				<img class="image_activites" src="images/activites/vieux_port_L.jpg" alt="vieux port à Marseille" width="100">
 				<h3>Vieux Port</h3>
 		</div>
-		<!-- Vignette "Vieux port"   -->
+		<!-- Vignette "fort de pomegues"   -->
 		<div class="vignette3">
-			<img class="image_marseille" src="images/activites/vieux_port_L.jpg" alt="vieux port à Marseille" width="100">
-				<h3>Vieux Port</h3>
+				<img class="image_activites" src="images/activites/pomegues_L.jpg" alt="fort de Pomègues" width="100">
+				<h3>Fort de Pomègues</h3>
 		</div>
-		<!-- Vignette "Vieux port"   -->
+		<!-- Vignette "iles du Frioul"   -->
 		<div class="vignette3">
-			<img class="image_marseille" src="images/activites/vieux_port_L.jpg" alt="vieux port à Marseille" width="100">
-				<h3>Vieux Port</h3>
+				<img class="image_activites" src="images/activites/frioul_L.jpg" alt="Iles du Frioul à Marseille" width="100">
+				<h3>Iles du Frioul</h3>
+		</div>
+		<!-- Vignette "calanques"   -->
+		<div class="vignette3">
+				<img class="image_activites" src="images/activites/calanques_L.jpg" alt="Parc national des Calanques à Marseille" width="100">
+				<h3>Parc National des Calanques</h3>
+		</div>
+		<!-- Vignette "notre dame de la garde"   -->
+		<div class="vignette3">
+				<img class="image_activites" src="images/activites/notre_dame_L.jpg" alt="Notre Dame de la Garde à Marseille" width="100">
+				<h3>Notre-Dame-de-la-Garde</h3>
+		</div>
+		<!-- Vignette "parc lomchamp"   -->
+		<div class="vignette3">
+				<img class="image_activites" src="images/activites/longchamp_L.jpg" alt="Parc Longchamp à Marseille" width="100">
+				<h3>Parc Longchamp</h3>
 		</div>
 	</div>
 </section>
-   <!-- Section 7 Gammes de prix  -->
+
 
    <!-- Footer -->
 <footer>
+	<div class="footer_container">
+		<div class="footer_1">
+			<h3>A propos</h3>
+			<h4>Fonctionnement du site</h4>
+			<h4>Conditions générales de vente</h4>
+			<h4>Données et confidentialité</h4>
+		</div>
+		<div class="footer_2">
+			<h3>Nos hébergements</h3>
+			<h4>Charte qualité</h4>
+			<h4>Soumettre votre hôtel</h4>
+		</div>
+		<div class="footer_3">
+			<h3>Assistance</h3>
+			<h4>Centre d'aide</h4>
+			<h4>Nous contacter</h4>
+		</div>
+	</div>
 </footer>
-
+</div>
 </body>
 
 </html>
