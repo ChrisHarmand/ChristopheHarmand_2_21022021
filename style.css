@@ -1,10 +1,14 @@
 @font-face {
   font-family: "Raleway";
-  src: url("Raleway.ttf");
+  src: url("fonts/Raleway.ttf");
 }
 
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("fonts/Raleway-Bold.ttf");
+}
 body{
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 header{
@@ -12,6 +16,98 @@ header{
   padding: 10px;
 }
 
-#logo{
-  width: auto;
+
+.logo {
+  max-width: 150px;
+}
+
+.cta_search_text{
+  color: #ffffff;
+  background-color: #0065FC;
+}
+
+.cta_search_icon{
+  color: ;
+  background-color: #0065FC;
+}
+#page_title{
+
+}
+
+#locate {
+  max-width: 15px;
+}
+
+#city {
+  font-size: 16px;
+  font-family: "Raleway-Bold";
+  font-weight: 600;
+}
+
+#search{
+  font-family: "Raleway-Bold";
+}
+
+.search_bar_text{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  border: 2px solid #F2F2F2;
+}
+.search_bar_text::placeholder{
+  font-family: "Raleway-Bold";
+  color: black;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.icon_filtre{
+  background: #DEEBFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 15px;
+
+}
+
+.filtre {
+  min-width: 25%;
+  max-width: 100px;
+  display: flex;
+  border: 2px solid #F2F2F2;
+  border-radius: 45px;
+  align-items: center;
+}
+
+.icon_info{
+  background: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 5px;
+  border: 2px solid #F2F2F2;
+}
+
+span.prix {
+  font-weight: 900;
+  color: blue;
+}
+
+#section_filtres{
+display: flex;
+justify-content: space-between;
+max-width: 75%;
+}
+
+#vignette1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
