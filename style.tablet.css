@@ -1,0 +1,15 @@
+/* Tablet and Small Laptop */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+  /* FOOTER */
+    .footer-container {
+      display: flex;
+    }
+
+    .footer-content {
+      margin-right: 4%;
+      margin-left: 2%;
+    }
+  }

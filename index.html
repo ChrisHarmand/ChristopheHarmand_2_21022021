@@ -1,237 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-	<head>
+
+<head>
 		<title>Reservia</title>
   	<meta charset="utf-8">
   	<meta name="description" content="Reservia, la nouvelle plateforme qui vous permet de trouver un hébergement pour vos vacances de rêve...">
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="logos/reservia_favicon.png">
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS smartphone -->
+		<link rel="stylesheet" href="style.css" >
+		<!-- CSS tablette -->
+		<link rel="stylesheet" href="style.tablet.css" >
+		<!-- CSS desktop -->
+		<link rel="stylesheet" href="style.desktop.css" >
+		<link rel="icon" href="logos/reservia_favicon.png" >
+		<script src="https://kit.fontawesome.com/d53cfbc5d7.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
-	<div id="bloc_page">
 <!-- Header -->
-		<header>
-			<div id="head_menu">
-				<div id="logo">
-					<img class="logo" src="logos/reservia_logo.png" alt="logo de reservia">
-				</div>
-				<nav class="menu">
-					<ul>
-						<li><a href="#hebergements_marseille">Hébergements</a></li>
-						<li><a href="#activites_marseille">Activités</a></li>
-					</ul>
-					<a id="cta" href="#">S'inscrire</a>
-				</nav>
+	<header class="header-container">
+			<img class="logo" src="logos/reservia_logo.png" alt="logo de reservia" width="100">
+			<a href="#" class="cta">S'inscrire</a>
+			<nav class="menu">
+				<ul>
+					<li><a href="#hebergements_marseille">Hébergements</a></li>
+					<li><a href="#activites_marseille">Activités</a></li>
+				</ul>
+			</nav>
 
-			</div>
-		</header>
+	</header>
 
-<!-- Section Titre principal -->
-<section id="page_title">
-	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-	<p>En plein centre ville ou en pleine nature</p>
-</section>
+<!-- Section Titre principal et barre de recherche -->
+	<section id="search">
+		<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+		<p>En plein centre ville ou en pleine nature</p>
 
-<!-- Section Barre de recherche -->
-<section id="search">
-	<div class="locate_icon">
-		<img src="icons/locate.svg" alt="localisation">
-	</div>
-	<div class="search_bar">
-		<form action="search.php" method="post">
-			<p>
-			<input type="search" name=“city” placeholder="Marseille, France" class="search_bar_text">
-			</p>
-		</form>
-	</div>
-	<div class="cta_search_icon">
-			<img id="icon_search" src="icons/search.svg" alt="recherche hebergement">
+		<div class="locate-icon">
+			<i class="fas fa-map-marker-alt"></i>
 		</div>
-	<div class="cta_search_text">
+		<div class="search-bar">
+			<form action="#" method="post">
+				<p>
+					<input type="search" name=“city” placeholder="Marseille, France" class="search-bar-text">
+				</p>
+			</form>
+		</div>
+		<div class="cta-search-icon">
+			<i class="fas fa-search"></i>
+		</div>
+		<div class="cta-search-text">
 			<p>Rechercher</p>
-	</div>
-</section>
-
+		</div>
+	</section>
 
    <!-- Section Filtres -->
-<section id="section_filtres">
-<h2>Filtres</h2>
-<div class="filtre">
-	<img class="icon_filtre" src="icons/economique.svg" alt="filtre economique">
-<h3>Economique</h3>
-</div>
-<div class="filtre">
-	<img class="icon_filtre" src="icons/familial.svg" alt="filtre familial">
-<h3>Familial</h3>
-</div>
-<div class="filtre">
-	<img class="icon_filtre" src="icons/romantique.svg" alt="filtre romantique">
-<h3>Romantique</h3>
-</div>
-<div class="filtre">
-	<img class="icon_filtre" src="icons/animaux.svg" alt="filtre animaux">
-<h3>Animaux autorisés</h3>
-</div>
-</section>
-
-<!-- info sous filtres -->
-	<div class="info">
-	<img class="icon_info" src="icons/info.svg" alt="information logements">
-		<p>Plus de 500 logements sont disponibles dans cette ville</p>
-	</div>
-   <!-- Section Colonne "les plus populaires" -->
-<aside class="hebergements_populaires">
-	<div class="titre_populaires">
-		<h2>Les plus populaires</h2>
-		<img src="icons/populaires.svg" alt="graphique montant" width="25">
-	</div>
-<!-- Vignettes "les plus populaires"   -->
-	<div class="vignettes_populaires">
-		<!-- Vignette "Hotel le soleil du matin"   -->
-		<div class="vignette2">
-			<img class="image_populaires" src="images/hebergements/le_soleil_L.jpg" alt="hotel le soleil du matin Marseille" width="100">
-			<div class="info_vignette_populaires">
-				<h3>Hôtel le soleil du matin</h3>
-				<p>Nuit à partir de <span class="prix">128€</span></p>
-				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
+	<section id="filter-section">
+		<h2>Filtres</h2>
+		<div class="filter-container">
+			<div class="filter-items">
+				<div class="filter-icons">
+		  		<div class="icon-wrapper"><i class="fas fa-money-bill-wave"></i></div>
 				</div>
+				<h3> <a class="filter-text" href="#">Economique</a>	</h3>
+			</div>
+			<div class="filter-items">
+				<div class="filter-icons">
+					<div class="icon-wrapper"><i class="fas fa-child"></i></div>
+				</div>
+				<h3> <a class="filter-text" href="#">Familial</a>	</h3>
+			</div>
+			<div class="filter-items">
+				<div class="filter-icons">
+					<div class="icon-wrapper"><i class="fas fa-heart"></i></div>
+				</div>
+				<h3> <a class="filter-text" href="#">Romantique</a>	</h3>
+			</div>
+			<div class="filter-items">
+				<div class="filter-icons">
+					<div class="icon-wrapper"><i class="fas fa-dog"></i></div>
+				</div>
+				<h3> <a class="filter-text" href="#">Animaux autorisés</a>	</h3>
 			</div>
 		</div>
+		<div class="filter-info">
+			<i class="fas fa-info"></i>
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+		</div>
+	</section>
+
+	<!-- Section les plus populaires -->
+	<section id="popular-container">
+			<div class="popular-title">
+				<h2>Les plus populaires</h2>
+				<i class="fas fa-chart-line"></i>
+			</div>
+<!-- Vignettes "les plus populaires"   -->
+			<div class="popular-content">
+		<!-- Vignette "Hotel le soleil du matin"   -->
+				<div class="vignette2">
+					<img class="image_populaires" src="images/hebergements/le_soleil_S.jpg" alt="hotel le soleil Marseille">
+					<div class="popular-content-info">
+						<div class="popular-hotel-name">
+							<h3>Hôtel Le soleil du matin</h3>
+							<p>Nuit à partir de <span class="prix">128€</span></p>
+						</div>
+						<div class="ranking">
+							<i class="fas fa-star blue"></i>
+							<i class="fas fa-star blue"></i>
+							<i class="fas fa-star blue"></i>
+							<i class="fas fa-star blue"></i>
+							<i class="fas fa-star blue"></i>
+						</div>
+					</div>
+				</div>
 		<!-- Vignette "Au coeur de l'eau"   -->
 		<div class="vignette2">
-			<img class="image_populaires" src="images/hebergements/au_coeur_de_leau_L.jpg" alt="hotel au coeur de l'eau Marseille" width="100">
-			<div class="info_vignette_populaires">
+			<img class="image_populaires" src="images/hebergements/au_coeur_de_leau_S.jpg" alt="hotel au coeur de l'eau Marseille">
+			<div class="popular-content-info">
+				<div class="popular-hotel-name">
 				<h3>A coeur de l'eau<br>Chambres d'hotes</h3>
 				<p>Nuit à partir de <span class="prix">71€</span></p>
+				</div>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star grey"></i>
 				</div>
 			</div>
 		</div>
 		<!-- Vignette "Hotel tout bleu et blanc"   -->
 		<div class="vignette2">
-			<img class="image_populaires" src="images/hebergements/bleu_blanc_L.jpg" alt="hotel tout bleu et blanc Marseille" width="100">
-			<div class="info_vignette_populaires">
-				<h3>Hôtel Tout bleu et<br>Blanc</h3>
-				<p>Nuit à partir de <span class="prix">68€</span></p>
-				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+			<img class="image_populaires" src="images/hebergements/bleu_blanc_S.jpg" alt="hotel tout bleu et blanc Marseille">
+			<div class="popular-content-info">
+				<div class="popular-hotel-name">
+					<h3>Hôtel Tout bleu et<br>Blanc</h3>
+					<p>Nuit à partir de <span class="prix">68€</span></p>
 				</div>
+				<div class="ranking">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star grey"></i>
+				</div>
+					</div>
 			</div>
 		</div>
-</div>
-</aside>
-   <!-- Section Hébergements à Marseille  -->
-<section id="hebergements_marseille">
-	<div class="titre_marseille">
-		<h2>Hébergements à Marseille</h2>
-	</div>
-<!-- Vignettes "hebergements à Marseille"   -->
-	<div class="vignettes_marseille">
+	</section>
+<!-- Section Hébergements à Marseille  -->
+	<section id="hebergements_marseille">
+		<div class="titre_marseille">
+			<h2>Hébergements à Marseille</h2>
+		</div>
+		<!-- Vignettes "hebergements à Marseille"   -->
+		<div class="vignettes_marseille">
 		<!-- Vignette "Auberge de la cannebiere"   -->
-		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/cannebiere_L.jpg" alt="auberge la cannebiere Marseille" width="100">
-			<div class="info_vignette_marseille">
-				<h3>Auberge la Cannebière</h3>
-				<p>Nuit à partir de <span class="prix">25€</span></p>
-				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+			<div class="vignette1">
+				<img class="image_marseille" src="images/hebergements/cannebiere_S.jpg" alt="auberge la cannebiere Marseille">
+				<div class="info_vignette_marseille">
+					<h3>Auberge la Cannebière</h3>
+					<p>Nuit à partir de <span class="prix"><strong>25€</strong></span></p>
+					<div class="ranking">
+						<i class="fas fa-star blue"></i>
+						<i class="fas fa-star blue"></i>
+						<i class="fas fa-star blue"></i>
+						<i class="fas fa-star blue"></i>
+						<i class="fas fa-star grey"></i>
+					</div>
 				</div>
 			</div>
-		</div>
 		<!-- Vignette "hotel du port"   -->
 		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/port_L.jpg" alt="hôtel du port Marseille" width="100">
+			<img class="image_marseille" src="images/hebergements/port_S.jpg" alt="hôtel du port Marseille">
 			<div class="info_vignette_marseille">
 				<h3>Hôtel du port</h3>
-				<p>Nuit à partir de <span class="prix">52€</span></p>
+				<p>Nuit à partir de <span class="prix"><strong>52€</strong></span></p>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
 				</div>
 			</div>
 		</div>
 		<!-- Vignette "hotel les mouettes"   -->
 		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/mouettes_L.jpg" alt="hôtel les mouettes Marseille" width="100">
+			<img class="image_marseille" src="images/hebergements/mouettes_S.jpg" alt="hôtel les mouettes Marseille">
 			<div class="info_vignette_marseille">
 				<h3>Hôtel Les mouettes</h3>
-				<p>Nuit à partir de <span class="prix">96€</span></p>
+				<p>Nuit à partir de <span class="prix"><strong>96€</strong></span></p>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star grey"></i>
 				</div>
 			</div>
 		</div>
 		<!-- Vignette "hotel de la mer"   -->
 		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/hotel_de_la_mer_L.jpg" alt="hôtel de la mer Marseille" width="100">
+			<img class="image_marseille" src="images/hebergements/hotel_de_la_mer_S.jpg" alt="hôtel de la mer Marseille">
 			<div class="info_vignette_marseille">
 				<h3>Hôtel de la mer</h3>
-				<p>Nuit à partir de <span class="prix">46€</span></p>
+				<p>Nuit à partir de <span class="prix"><strong>46€</strong></span></p>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star grey"></i>
+					<i class="fas fa-star grey"></i>
 				</div>
 			</div>
 		</div>
 		<!-- Vignette "auberge le panier"   -->
 		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/panier_L.jpg" alt="auberge le panier Marseille" width="100">
+			<img class="image_marseille" src="images/hebergements/panier_S.jpg" alt="auberge le panier Marseille">
 			<div class="info_vignette_marseille">
 				<h3>Auberge Le Panier</h3>
-				<p>Nuit à partir de <span class="prix">23€</span></p>
+				<p>Nuit à partir de <span class="prix"><strong>23€</strong></span></p>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_gris.svg" alt="etoile_gris" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star grey"></i>
 				</div>
 			</div>
 		</div>
 		<!-- Vignette "Hôtel chez Amina"   -->
 		<div class="vignette1">
-			<img class="image_marseille" src="images/hebergements/chez_amina_L.jpg" alt="hôtel chez Amina Marseille" width="100">
+			<img class="image_marseille" src="images/hebergements/chez_amina_S.jpg" alt="hôtel chez Amina Marseille">
 			<div class="info_vignette_marseille">
 				<h3>Hôtel chez Amina</h3>
 				<p>Nuit à partir de <span class="prix">96€</span></p>
 				<div class="ranking">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
-					<img src="icons/etoile_bleu.svg" alt="etoile_bleu" width="15">
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
+					<i class="fas fa-star blue"></i>
 				</div>
 			</div>
 		</div>
+		<p id="plus">Afficher plus</p>
 </div>
 </section>
 
@@ -240,64 +255,74 @@
 	<div class="titre_activites">
 		<h2>Activités à Marseille</h2>
 	</div>
-<!-- Vignettes activités"   -->
-	<div class="vignettes_activites">
-		<!-- Vignette "Vieux port"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/vieux_port_L.jpg" alt="vieux port à Marseille" width="100">
-				<h3>Vieux Port</h3>
-		</div>
-		<!-- Vignette "fort de pomegues"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/pomegues_L.jpg" alt="fort de Pomègues" width="100">
-				<h3>Fort de Pomègues</h3>
-		</div>
-		<!-- Vignette "iles du Frioul"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/frioul_L.jpg" alt="Iles du Frioul à Marseille" width="100">
-				<h3>Iles du Frioul</h3>
-		</div>
+
+	<!-- Vignettes activités"   -->
+		<div class="vignettes_activites">
+
+			<!-- Premier bloc de 3 vignettes "   -->
+			<div class="bloc_1">
+					<!-- Vignette "Vieux port"   -->
+					<div class="vignette_L">
+						<img class="image_activites" src="images/activites/vieux_port_S.jpg" alt="vieux port à Marseille">
+						<h3>Vieux Port</h3>
+					</div>
+					<!-- Vignette "fort de pomegues"   -->
+					<div class="vignette_M">
+					<img class="image_activites" src="images/activites/pomegues_S.jpg" alt="fort de Pomègues">
+					<h3>Fort de Pomègues</h3>
+					</div>
+					<!-- Vignette "iles du Frioul"   -->
+					<div class="vignette_S">
+						<img class="image_activites" src="images/activites/frioul_S.jpg" alt="Iles du Frioul à Marseille">
+						<h3>Iles du Frioul</h3>
+					</div>
+			</div>
+		<!-- Second bloc de 3 vignettes "   -->
+<div class="bloc_2">
 		<!-- Vignette "calanques"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/calanques_L.jpg" alt="Parc national des Calanques à Marseille" width="100">
+		<div class="vignette_L">
+				<img class="image_activites" src="images/activites/calanques_S.jpg" alt="Parc national des Calanques à Marseille" >
 				<h3>Parc National des Calanques</h3>
 		</div>
 		<!-- Vignette "notre dame de la garde"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/notre_dame_L.jpg" alt="Notre Dame de la Garde à Marseille" width="100">
+		<div class="vignette_S">
+				<img class="image_activites" src="images/activites/notre_dame_S.jpg" alt="Notre Dame de la Garde à Marseille">
 				<h3>Notre-Dame-de-la-Garde</h3>
 		</div>
 		<!-- Vignette "parc lomchamp"   -->
-		<div class="vignette3">
-				<img class="image_activites" src="images/activites/longchamp_L.jpg" alt="Parc Longchamp à Marseille" width="100">
+		<div class="vignette_M">
+				<img class="image_activites" src="images/activites/longchamp_S.jpg" alt="Parc Longchamp à Marseille">
 				<h3>Parc Longchamp</h3>
+		</div>
 		</div>
 	</div>
 </section>
-
-
    <!-- Footer -->
 <footer>
-	<div class="footer_container">
-		<div class="footer_1">
+	<div class="footer-container">
+		<div class="footer-content">
 			<h3>A propos</h3>
-			<h4>Fonctionnement du site</h4>
-			<h4>Conditions générales de vente</h4>
-			<h4>Données et confidentialité</h4>
+			<ul>
+		  	<li>	<h4><a href="#">Fonctionnement du site</a></h4>	</li>
+		    <li>	<h4><a href="#">Conditions générales de vente</a></h4>	</li>
+		    <li>	<h4><a href="#">Données et confidentialité</a></h4>	</li>
+		  </ul>
 		</div>
-		<div class="footer_2">
+		<div class="footer-content">
 			<h3>Nos hébergements</h3>
-			<h4>Charte qualité</h4>
-			<h4>Soumettre votre hôtel</h4>
+			<ul>
+		  	<li>	<h4><a href="#">Charte qualité</a></h4>	</li>
+		    <li>	<h4><a href="#">Soumettre votre hôtel</a></h4>	</li>
+		  </ul>
 		</div>
-		<div class="footer_3">
+		<div class="footer-content">
 			<h3>Assistance</h3>
-			<h4>Centre d'aide</h4>
-			<h4>Nous contacter</h4>
+			<ul>
+		  	<li> 	<h4><a href="#">Centre d'aide</a></h4>	</li>
+		    <li>	<h4><a href="#">Nous contacter</a></h4>	</li>
+		  </ul>
 		</div>
 	</div>
 </footer>
-</div>
 </body>
-
 </html>

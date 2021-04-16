@@ -1,0 +1,19 @@
+/* Large Desktop and Large Screen */
+@media screen and (min-width: 1200px) and (max-width: 2400px) {
+
+/* FOOTER */
+/* FOOTER */
+  footer {
+    padding: 4rem 3vw;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+
+  .footer-content {
+    width: 30%;
+   margin-right: 10%;
+    margin-left: 5%;
+  }
+}
