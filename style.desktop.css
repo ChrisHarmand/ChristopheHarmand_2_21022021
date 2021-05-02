@@ -1,19 +1,188 @@
 /* Large Desktop and Large Screen */
 @media screen and (min-width: 1200px) and (max-width: 2400px) {
 
-/* FOOTER */
+  /* MAIN CONFIG */
+
+  section, footer{
+     padding-top: 2rem;
+     padding-left: 3rem;
+     padding-right: 3rem;
+     padding-bottom: 2rem;
+   }
+
+div{
+  display: block;
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 0px;
+}
+
+.logo{
+  order: 0;
+  margin: 25px auto 0 35px;
+}
+
+header nav{
+  order: 1;
+  display: block;
+  width : auto;
+  justify-content: space-between;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+ }
+
+ header li{
+   padding-top: 5rem;
+   padding-bottom: 0px;
+   border-bottom: none;
+   padding-left: 3.5rem;
+   padding-right: 3.5rem;
+ }
+
+ header li:hover{
+   border-bottom: none;
+   border-top: solid 3px #0065FC;
+ }
+
+ .cta{
+   order: 2;
+   padding-top: 5rem;
+   padding-right: 7rem;
+   padding-left: 3.5rem;
+ }
+
+/* SEARCH SECTION */
+
+.cta-search-icon{
+display:none;
+}
+
+.search-bar input[type="submit"]{
+    display: flex;
+}
+
+
+
+/* FILTER SECTION */
+#filter-section{
+  display: flex;
+  align-items: center;
+}
+#filter-section h2{
+padding: 1.5rem;
+}
+
+
+/* MAIN */
+#main_1{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+/* POPULAR */
+#popular-container{
+  border-radius: 1.5rem;
+  width: 33.33%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.popular-title{
+  margin: 1rem;
+}
+
+.popular-content{
+  height: 100%;
+}
+
+.vignette2 {
+  margin-top: 2rem;
+}
+
+/* LODGES */
+#hebergements_marseille{
+background: #f2f2f2;
+border-radius: 1.5rem;
+width: 66.66%;
+order: 1;
+margin-right: 2rem;
+}
+
+.vignette1{
+  background-color: #ffffff;
+  width: 245px;
+}
+
+.vignettes_marseille{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+
+
+  /* ACTIVITIES */
+#activites_marseille{
+margin-top: 3rem;
+margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.vignettes_activites{
+  height: 445px;
+    border-radius: 15px;
+    display: flex;
+
+}
+
+.colonne_1, .colonne_2{
+  width: 25%;
+}
+
+.colonne_2{
+justify-content: space-between;
+}
+
+.bloc{
+  margin: 0px;
+  padding: 0px;
+}
+
+.image_activites_L {
+  height: 388px;
+}
+
+.image_activites_M {
+  height: 180px;
+}
+
+.image_activites_S {
+  height: 110px;
+}
+
 /* FOOTER */
   footer {
-    padding: 4rem 3vw;
+  margin: 0;
   }
 
   .footer-container {
     display: flex;
+    justify-content: space-between;
   }
 
   .footer-content {
     width: 30%;
-   margin-right: 10%;
-    margin-left: 5%;
+  }
+  .footer-content {
+    padding: 2rem;
   }
 }
