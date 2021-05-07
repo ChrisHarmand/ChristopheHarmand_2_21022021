@@ -172,12 +172,12 @@ header li:hover{
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 1.8rem;
-    border-color: #0065FC;
     color: #ffffff;
+    border :none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
@@ -285,8 +285,13 @@ header li:hover{
 }
 
 /* POPULAR */
+
+#main_1{
+  padding: 0;
+}
 #popular-container{
   background: #f2f2f2;
+  padding: 2rem;
 }
 
 .popular-title{
@@ -348,7 +353,8 @@ color: #D9D9D9;
 }
 
 .ranking{
-
+padding-top: 3rem;
+padding-bottom: 1rem;
 }
 /* LODGES */
 #hebergements_marseille{
