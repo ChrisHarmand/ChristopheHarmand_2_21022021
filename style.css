@@ -63,6 +63,7 @@ ul {
 i{
   font-size: 2rem;
 }
+
 /* HEADER */
 
 header{
@@ -289,6 +290,7 @@ header li:hover{
 #main_1{
   padding: 0;
 }
+
 #popular-container{
   background: #f2f2f2;
   padding: 2rem;
@@ -312,11 +314,12 @@ header li:hover{
 
 .image_populaires{
   width: 127px;
-height: 135px;
+  height: 135px;
   border-radius: 20px 0 0 20px;
   padding: 5px;
   object-fit: cover;
 }
+
 
 .popular-content-info{
   display: flex;
@@ -439,7 +442,7 @@ footer ul li {
   padding: 0.5rem 0;
 }
 
-footer ul li a:hover {
+footer ul li a:hover, h3 a:hover {
   color: #0065fc;
   transition: all 0.2s ease-in-out;
 }
@@ -450,4 +453,8 @@ footer h4{
 
 footer h3{
   padding-bottom: 1.5rem;
+}
+
+footer h3 a{
+  font-size: 1.6rem;
 }
