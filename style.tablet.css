@@ -1,7 +1,21 @@
 /* Tablet and Small Laptop */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) {
 
+
+
+.vignette1{
+  width: 30%;
+}
+
+.popular-hotel-name p{
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+}
+
+.popular-hotel-name h3{
+  font-size: 1.5rem;
+}
 
   /* FOOTER */
     .footer-container {

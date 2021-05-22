@@ -45,6 +45,7 @@ header nav{
    border-bottom: none;
    padding-left: 3.5rem;
    padding-right: 3.5rem;
+   border-top: solid 3px #fff;
  }
 
  header li:hover{
@@ -138,6 +139,11 @@ justify-content: space-around;
   margin-right: 2rem;
 }
 
+.popular-hotel-name p{
+  font-size: 1.3rem;
+  line-height: 150%;
+}
+
 .vignette2 {
 width: 345px;
 height: 145px;
@@ -160,7 +166,7 @@ padding: 3rem;
 
 .vignette1{
   background-color: #ffffff;
-  max-width: 30%;
+  width: 30%;
 }
 
 .vignettes_marseille{
